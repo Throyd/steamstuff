@@ -2,11 +2,8 @@ JHIN MOLA MAZO
 {% for review in site.reviews %}
 
   {% for game in site.games %}
-    {{game.name}}
     {% if game.key == review.gamename %}
-{{game.key}} | {{review.gamename}}
       {% assign steamid = game.steamid %}
-{{steamid}} | true
     {% endif %}
   {% endfor %}
 
@@ -17,18 +14,9 @@ JHIN MOLA MAZO
     </div>
     <div>
         <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Left</h3>
+            <a href="https://throyd.github.io/steamstuff/criticas/{{review.title}}"><h3 class="uk-card-title">{{ review.name }}</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
         </div>
     </div>
-</div>
-
-
-
-
-  <h2>
-    <a href="{{ review.url }}">
-      {{ review.name }}
-    </a>
-  </h2>
+ </div>
 {% endfor %}
