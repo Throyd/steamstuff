@@ -1,5 +1,6 @@
 ---
 name: Persona 4 Golden
+key: persona4golden
 steamid: 1113000
 developer: Atlus
 publisher: Sega
