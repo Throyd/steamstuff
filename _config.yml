@@ -16,8 +16,9 @@ collections:
     name:
     gamename:
     version:
-    author:
+    author: Jhin
     publisheddate:
+    thumbs:
     output: true
     permalink: /reviews/:title/
 
