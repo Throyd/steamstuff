@@ -20,7 +20,7 @@ collections:
     publisheddate:
     thumbs:
     output: true
-    permalink: /critica/:title/
+    permalink: /criticas/:title/
 
 defaults:
   -
