@@ -8,7 +8,7 @@ fulltitle: "My New Website | Update Coming August 2004"
 <!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
 
 {% for game in site.games %}
-  <a href="{{ site.title }}{{game.url}}">{{game.name}}</a>
+  <a href="{{ site.url }}{{game.url}}">{{game.name}}</a>
     <p>{{ game.developer}} - {{game.publisher}}</p>
     <p>{{game.url}}</p>
  {% endfor %}
