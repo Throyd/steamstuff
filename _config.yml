@@ -12,6 +12,14 @@ collections:
     launchdate: 
     output: true
     permalink: /games/:title/
+  reviews:
+    name:
+    gamename:
+    version:
+    author:
+    publisheddate:
+    output: true
+    permalink: /reviews/:title/
 
 
 defaults:
@@ -20,5 +28,10 @@ defaults:
       type: "games"
     values:
       layout: "game"
+   - scope:
+      path: ""
+      type: "reviews
+    values:
+      layout: "review
     
     
