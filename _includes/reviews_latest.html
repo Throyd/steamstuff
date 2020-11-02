@@ -3,7 +3,8 @@ JHIN MOLA MAZO
 
   {% for game in site.games %}
     {% if game.name == review.gamename %}
-      {%assign steamid = game.steamid %}
+      {% assign steamid = game.steamid %}
+{{steamid}}
     {% endif %}
   {% endfor %}
 
