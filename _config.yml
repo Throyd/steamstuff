@@ -12,5 +12,6 @@ collections:
     launchdate: 
     output: true
     permalink: /games/:title/
+    layout: game
     
     
