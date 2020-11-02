@@ -3,7 +3,8 @@
   color: #ffffff;
 }
 .review-darker{
-  background: linear-gradient( to right, #c6e6f8 5%,#95bcd3 95%);
+  background: rgba( 0, 0, 0, 0.2 );
+   color: #ffffff;
 }
 .darkest{
   background-color: #171a21;
