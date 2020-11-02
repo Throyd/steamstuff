@@ -12,6 +12,13 @@ collections:
     launchdate: 
     output: true
     permalink: /games/:title/
-    layout: game
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "game"
     
     
