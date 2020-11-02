@@ -6,7 +6,7 @@ url: "https://throyd.github.io/steamstuff/" # The base hostname & protocol for y
 collections:
   games:
     name:
-    steam_id:
+    steamid:
     developer: 
     publisher:
     launchdate: 
