@@ -1,6 +1,6 @@
 title: Cosicas de Steam
 tagline: "Porque hay mucho donde escoger"
-url: "https://throyd.github.io/steamstuff/" # The base hostname & protocol for your site. Use it if you need absolute URL's
+url: "https://throyd.github.io/steamstuff" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 
 collections:
