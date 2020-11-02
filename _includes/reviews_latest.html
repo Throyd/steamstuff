@@ -2,9 +2,11 @@ JHIN MOLA MAZO
 {% for review in site.reviews %}
 
   {% for game in site.games %}
+    {{game.name}}
     {% if game.key == review.gamename %}
+{{game.key}} | {{review.gamename}}
       {% assign steamid = game.steamid %}
-{{steamid}}
+{{steamid}} | true
     {% endif %}
   {% endfor %}
 
