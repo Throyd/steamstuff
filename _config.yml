@@ -11,7 +11,7 @@ collections:
     publisher:
     launchdate: 
     output: true
-    permalink: /games/:title/
+    permalink: /juegos/:title/
   reviews:
     name:
     gamename:
@@ -20,7 +20,7 @@ collections:
     publisheddate:
     thumbs:
     output: true
-    permalink: /reviews/:title/
+    permalink: /critica/:title/
 
 defaults:
   -
@@ -32,8 +32,8 @@ defaults:
   -
     scope:
       path: ""
-      type: "reviews" # previously `page` in Jekyll 2.2.
+      type: "reviews"
     values:
-      layout: "review" # overrides previous default layout
+      layout: "review" 
       author: "Jhin"
     
