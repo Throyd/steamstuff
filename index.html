@@ -1,1 +1,8 @@
 <h1>Jhin Mola</h1>
+
+
+{% for game in site.games %}
+  <h2>{{ game.name }} - {{ game.id }}</h2>
+  <p>{{ game.developer}} - {{game.publisher}}</p>
+{% endfor %}
+
