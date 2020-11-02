@@ -16,23 +16,24 @@ collections:
     name:
     gamename:
     version:
-    author: Jhin
+    author:
     publisheddate:
     thumbs:
     output: true
     permalink: /reviews/:title/
 
-
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
       type: "games"
     values:
       layout: "game"
-   - scope:
+  -
+    scope:
       path: ""
-      type: "reviews
+      type: "reviews" # previously `page` in Jekyll 2.2.
     values:
-      layout: "review
-    
+      layout: "review" # overrides previous default layout
+      author: "Jhin"
     
