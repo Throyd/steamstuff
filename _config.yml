@@ -5,5 +5,7 @@ collections:
     developer: 
     publisher:
     launchdate: 
+    output: true
+    permalink: /games/:title/
     
     
