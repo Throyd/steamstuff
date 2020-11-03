@@ -1,25 +1,25 @@
 {% for review in site.reviews %}
-  {% for game in site.games %}
-    {% if game.key == review.gamename %}
-      {% assign steamid = game.steamid %}
-    {% endif %}
-  {% endfor %}
+	{% for game in site.games %}
+    	{% if game.key == review.gamename %}
+			{% assign steamid = game.steamid %}
+		{% endif %}
+	{% endfor %}
 {% for author in site.authors %}
-  {% if author.name == review.author %}
-    {% assign avatar = author.avatar %}
-    {% assign author = author.name %}
-  {% endif %}
+	{% if author.name == review.author %}
+		{% assign avatar = author.avatar %}
+		{% assign author = author.name %}
+	{% endif %}
 {% endfor %}
 
 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s review-darker" uk-grid>
-    <div class="uk-card-media-left uk-cover-container">
-        <img src="https://steamcdn-a.akamaihd.net/steam/apps/{{steamid}}/header.jpg" alt="" uk-cover>
-    </div>
-    <div>
-	    <div class="uk-width-expand">
+	<div class="uk-card-media-left uk-cover-container">
+		<img src="https://steamcdn-a.akamaihd.net/steam/apps/{{steamid}}/header.jpg" alt="" uk-cover>
+	</div>
+	<div>
+		<div class="uk-width-expand">
 			<a href="https://throyd.github.io/steamstuff/criticas/{{review.title || downcase }}"><h3 class="uk-card-title">{{ review.name }}</h3></a>
 			<div class="uk-width-auto">
-				<img class="uk-border-circle" width="40" height="40" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}"> {{author}}
+				<img class="uk-border-circle" width="40" height="40" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}"> <a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}">{{author}}</a>
 			</div>
 		<p class="uk-text-meta uk-margin-remove-top">{{review.dateplublished}}</p>
 	</div>
