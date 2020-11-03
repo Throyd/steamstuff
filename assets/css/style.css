@@ -6,6 +6,9 @@
   background: rgba( 0, 0, 0, 0.2 );
    color: #ffffff;
 }
+.review_name {
+  color: #c7d5e0;
+}
 .darkest{
   background-color: #171a21;
   color: #b8b6b4;  
@@ -18,4 +21,7 @@
 }
 blockquote, blockquote footer {
   color: #ffffff;
+}
+.steam_link {
+  color: #384959;
 }
