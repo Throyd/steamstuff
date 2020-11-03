@@ -26,7 +26,7 @@ collections:
     aboutme:
     avatar:
     output: true
-    permalink: /criticas/:title/    
+    permalink: /autores/:title/    
 
 defaults:
   -
