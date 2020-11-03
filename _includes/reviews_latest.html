@@ -16,7 +16,10 @@
 		<img src="https://steamcdn-a.akamaihd.net/steam/apps/{{steamid}}/header.jpg" alt="" uk-cover>
 	</div>
 	<div>
-		<div class="uk-grid-small uk-flex-middle" uk-grid>
+		<div class="uk-padding-small">
+			<a href="https://throyd.github.io/criticas/{{review.name ||downcase }}">{{review.name}}</a>
+		</div>
+		<div class="uk-grid-small uk-flex-middle uk-padding-small" uk-grid>
 			<div class="uk-width-auto">
 				<img class="uk-border-circle" width="40" height="40" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
 			</div>
