@@ -21,6 +21,12 @@ collections:
     thumbs:
     output: true
     permalink: /criticas/:title/
+  authors:
+    name:
+    aboutme:
+    avatar:
+    output: true
+    permalink: /criticas/:title/    
 
 defaults:
   -
@@ -36,4 +42,9 @@ defaults:
     values:
       layout: "review" 
       author: "Jhin"
-    
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author" 
