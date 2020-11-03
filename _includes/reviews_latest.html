@@ -4,6 +4,12 @@
       {% assign steamid = game.steamid %}
     {% endif %}
   {% endfor %}
+{% for author in site.authors %}
+  {% if author.name == review.author %}
+    {% assign avatar = author.avatar %}
+    {% assign author = author.name %}
+  {% endif %}
+{% endfor %}
 
 
 
@@ -14,15 +20,11 @@
     </div>
     <div>
            <div class="uk-width-auto">
-                 {% for author in site.authors %}
-                  {{author.name}} | {{review.author}}
-                  {% if review.author = author.name %}
-                 {$ assign avatar = author.avatar %}
-             {% endif %}
-             {% endfor %}
+
                 <img class="uk-border-circle" width="40" height="40" src="https://throyd.github.io/steamstuff/">
             </div>
             <div class="uk-width-expand">
+              {{author}}
                <a href="https://throyd.github.io/steamstuff/criticas/{{review.title || downcase }}"><h3 class="uk-card-title">{{ review.name }}</h3></a>
                 <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
             </div>
