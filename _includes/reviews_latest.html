@@ -17,9 +17,11 @@
 	</div>
 	<div>
 		<div class="uk-margin-small-left">
-			<a href="https://throyd.github.io/criticas/{{review.name ||downcase }}">{{review.name}}</a>
+			<a href="https://throyd.github.io/criticas/{{review.name ||downcase }}">
+				<h3 class="review_name">{{review.name}}</h3>
+			</a>
 			<p>
-				<a href="https://store.steampowered.com/app/" target="_blank"><i class="fab fa-steam-square"></i>
+				<a href="https://store.steampowered.com/app/{{steamid}}" target="_blank"><i class="fab fa-steam-square steam_link"></i>
 			</p>
 		</div>
 		<div class="uk-grid-small uk-flex-middle uk-margin-small-left" uk-grid>
