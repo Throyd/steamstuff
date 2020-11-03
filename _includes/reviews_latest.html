@@ -16,20 +16,15 @@
 		<img src="https://steamcdn-a.akamaihd.net/steam/apps/{{steamid}}/header.jpg" alt="" uk-cover>
 	</div>
 	<div>
-		
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-            <div class="uk-width-auto">
-                <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
-            </div>
+		<div class="uk-grid-small uk-flex-middle" uk-grid>
+			<div class="uk-width-auto">
+				<img class="uk-border-circle" width="40" height="40" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
+			</div>
             <div class="uk-width-expand">
-                <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                <a <a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}"><h4 class="uk-margin-remove-bottom">{{author}}</h4></a>
+                <p class="uk-text-meta uk-margin-remove-top">{{review.publisheddate}}</p>
             </div>
         </div>
-		
-		
-		
-
 	</div>
 </div>
 
