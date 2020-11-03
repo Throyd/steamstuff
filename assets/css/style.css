@@ -10,11 +10,6 @@
     color: #c7d5e0;
     font-size: 1.25em;
     line-height: 18px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: block;
-    overflow: hidden;
-    transition: color 0.25s;
 }
 .darkest{
   background-color: #171a21;
