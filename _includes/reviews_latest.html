@@ -8,16 +8,26 @@
 
 
 
-<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin review-darker" uk-grid>
     <div class="uk-card-media-left uk-cover-container">
         <img src="https://steamcdn-a.akamaihd.net/steam/apps/{{steamid}}/header.jpg" alt="" uk-cover>
         <canvas width="600" height="400"></canvas>
     </div>
     <div>
         <div class="uk-card-body">
-            <a href="https://throyd.github.io/steamstuff/criticas/{{review.title || downcase }}"><h3 class="uk-card-title">{{ review.name }}</h3></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <div class="uk-card-header">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+            </div>
+            <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+            </div>
+        </div>
+
         </div>
     </div>
 </div>
+              <a href="https://throyd.github.io/steamstuff/criticas/{{review.title || downcase }}"><h3 class="uk-card-title">{{ review.name }}</h3></a>
 {% endfor %}
