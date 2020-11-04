@@ -24,34 +24,34 @@
 			
 			<div class="uk-grid uk-child-width-1-6">
 				<div>
-					1
+					<a class="uk-link-muted" href="https://store.steampowered.com/app/{{steamid}}" target="_blank">
+						<i class="fab fa-steam-square steam_link fa-2x"></i>
+					</a>
 				</div>
-								<div>
-					2
-				</div>
-								<div>
-					3
-				</div>
-								<div>
-				4
-				</div>
-							<div>
-				5
-								
-				</div>
-								<div>
-					6
-				</div>
-				
-			<p>
-				<a href="https://store.steampowered.com/app/{{steamid}}" target="_blank">
-					<i class="fab fa-steam-square steam_link fa-2x"></i>
-				</a>
+				<div>
 				{% if review.thumbs == "up" %}
 					<img width="28" height="28" src="https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp_v6.png">
 				{% else %}
 					<img width="28" height="28" src"https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown_v6.png">
 				{% endif %}
+				</div>
+				<div>
+					3
+				</div>
+				<div>
+					4
+				</div>
+				<div>
+					5						
+				</div>
+				<div>
+					6
+				</div>
+			</div>
+				
+			<p>
+				
+	
 			</p>
 			<div class="uk-grid-small uk-flex-middle" uk-grid>
 				<div class="uk-width-auto">
