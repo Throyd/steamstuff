@@ -24,15 +24,15 @@
 			<p>
 				<a href="https://store.steampowered.com/app/{{steamid}}" target="_blank"><i class="fab fa-steam-square steam_link"></i>
 			</p>
-						<div class="uk-grid-small uk-flex-middle uk-margin-small-left" uk-grid>
-			<div class="uk-width-auto">
-				<img class="uk-border-circle" width="20" height="20" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
-			</div>
-			<div class="uk-width-expand">
-                		<a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}"><span class="uk-margin-remove-bottom">{{author}}</h4></span>
-				<span class="uk-text-meta uk-margin-remove-top">{{review.publisheddate}}</span>
-  			</div>
-        	</div>
+			<div class="uk-grid-small uk-flex-middle" uk-grid>
+				<div class="uk-width-auto">
+					<img class="uk-border-circle" width="20" height="20" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
+				</div>
+				<div class="uk-width-expand">
+                			<span class="uk-text-meta uk-margin-remove-top">Publicado por </span> <a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}"><span class="uk-margin-remove-bottom">{{author}}</h4></span>
+					 el <span class="uk-text-meta uk-margin-remove-top">{{review.publisheddate}}</span>
+  				</div>
+        		</div>
 		</div>
 	</div>
 </div>
