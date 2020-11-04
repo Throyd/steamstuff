@@ -18,7 +18,7 @@
 	</div>
 	<div>
 		<div class="uk-card-body">
-			<a href="https://throyd.github.io/criticas/{{review.name ||downcase }}">
+			<a href="https://throyd.github.io/criticas/{{review.title ||downcase }}">
 				<h3 class="review_name">{{review.name}}</h3>
 			</a>
 			
@@ -43,7 +43,7 @@
 			</p>
 			<div class="uk-grid-small uk-flex-middle" uk-grid>
 				<div class="uk-width-auto">
-					<span class="uk-text-meta uk-margin-remove-top">Publicado por &nbsp;&nbsp;</span> 
+					<span class="uk-text-meta uk-margin-remove-top">Publicado por &nbsp;</span> 
 					<a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}"> 
 						<img class="uk-border-circle" width="18" height="18" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
 					</a>
