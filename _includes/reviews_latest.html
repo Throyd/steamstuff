@@ -25,6 +25,10 @@
 				<a href="https://store.steampowered.com/app/{{steamid}}" target="_blank">
 					<i class="fab fa-steam-square steam_link fa-2x"></i>
 				</a>
+				{% if review.thumbs == "up" %}
+					<img src="https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp_v6.png">
+				{% else %}
+					<img src"https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown_v6.png">
 			</p>
 			<div class="uk-grid-small uk-flex-middle" uk-grid>
 				<div class="uk-width-auto">
