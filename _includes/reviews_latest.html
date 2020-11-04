@@ -28,9 +28,12 @@
 			</p>
 			<div class="uk-grid-small uk-flex-middle" uk-grid>
 				<div class="uk-width-auto">
-					<span class="uk-text-meta uk-margin-remove-top">Publicado por </span> <img class="uk-border-circle" width="20" height="20" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
+					<span class="uk-text-meta uk-margin-remove-top">Publicado por </span> 
+					<a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}"> 
+						<img class="uk-border-circle" width="15" height="15" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
+					</a>
 				</div>
-				<div class="uk-width-expand">
+				<div>
                 			 <a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}">
 						 <span class="uk-margin-remove-bottom">
 							 {{author}}
