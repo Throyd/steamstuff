@@ -28,24 +28,12 @@
 						<i class="fab fa-steam-square steam_link fa-2x"></i>
 					</a>
 				</div>
-				<div>
-				{% if review.thumbs == "up" %}
-					<img src="https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="28" "height="28">
-				{% else %}
-					<i class="fas fa-thumbs-down fa-2x"></i>
-				{% endif %}
-				</div>
-				<div>
-					3
-				</div>
-				<div>
-					4
-				</div>
-				<div>
-					5						
-				</div>
-				<div>
-					6
+				<div class="uk-width-expand">
+					{% if review.thumbs == "up" %}
+						<img src="https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="28" "height="28">
+					{% else %}
+						<i class="fas fa-thumbs-down fa-2x"></i>
+					{% endif %}
 				</div>
 			</div>
 				
